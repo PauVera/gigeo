@@ -1,0 +1,54 @@
+.nav-bar{
+    font-size: 2.5rem;
+    display: flex;
+    padding: 1rem 2rem;
+    max-width: 1900px!important;
+    &__brand{     
+        color: $dark;
+        font-weight: 500;
+        align-self: center;
+
+        &--sup{
+            font-size: 1rem;
+            font-weight: 200;
+            align-self: center;
+        }
+    }
+    &__menu{
+        margin-top: 1rem;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    &__icon{
+        align-self: baseline;
+        &--gris{
+            color: $gris;
+        }
+        &--hide{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .nav-bar{
+        width: 100%;
+        &__brand{     
+            justify-self: flex-start;
+            margin-left: 3rem;
+    
+            &--sup{
+                justify-self: flex-start;
+            }
+        }
+        &__icon{
+            font-size: 1.5rem;
+            padding-left: 1.5rem;
+            &--hide{
+                display: initial;
+            }
+        }
+    }
+}
